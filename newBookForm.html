@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book Collection App</title>
+    <link rel="stylesheet" href="css/styles.css">	
+</head>
+
+<body>
+  <header>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+            <li class="nav-item">
+            <a href="myCollection.html" class="nav-link">My Collection</a>
+          </li>
+          <li class="nav-item">
+            <a href="newBookForm.html" class="nav-link">New Book</a>
+          </li>
+          <li class="nav-item">
+            <a href="findBook.html" class="nav-link">Find book</a>
+          </li>
+        </ul>
+        <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <hr>
+  <main>
+    <div class = "bg-img2">
+    <h2 id="addBookH">Add New Book</h2><br>
+<form id="bookForm">
+  <div class="form"><br>
+  <fieldset id="f1">
+    <legend>Book Details</legend>
+    <label>Title: <input type="text" id="title" required></label><br><br>
+    <label>Author: <input type="text" id="author" required></label><br><br>
+    <label>Year: <input type="date" id="year" required></label><br><br>
+    <label for="description">Description:</label><br><br>
+    <textarea id="description" name="description" rows="5" cols="100" placeholder="Enter book description here"></textarea>
+  </fieldset>
+
+  <fieldset id="f2">
+  <legend>Genres</legend>
+  <div class="col1">
+    <label><input type="checkbox" id="romance" name="genre" value="Romance"> Romance</label>
+    <label><input type="checkbox" id="mystery" name="genre" value="Mystery"> Mystery</label>
+    <label><input type="checkbox" id="tragedy" name="genre" value="Tragedy"> Tragedy</label>
+    <label><input type="checkbox" id="fantasy" name="genre" value="Fantasy"> Fantasy</label>
+    <label><input type="checkbox" id="historical" name="genre" value="Historical"> Historical</label>
+  </div>
+    
+    <div class="col2">
+      <label><input type="checkbox" id="psychological" value="Psychological"> Psychological</label>
+      <label><input type="checkbox" id="supernatural" value="Supernatural"> Supernatural</label>
+      <label><input type="checkbox" id="comedy" value="Comedy"> Comedy</label>
+      <label><input type="checkbox" id="drama" value="Drama"> Drama</label>
+      <label><input type="checkbox" id="action" value="Action"> Action</label>
+    </div>
+    
+    <div class="col3">
+      <label><input type="checkbox" id="science" value="Science"> Science</label>
+      <label><input type="checkbox" id="biography" value="Biography"> Biography</label>
+      <label><input type="checkbox" id="youngadult" value="Young Adult"> Young Adult</label>
+      <label><input type="checkbox" id="na" value="N/A"> N/A</label>
+    </div>
+
+  </fieldset>
+
+  <fieldset id="f3">
+    <legend>Maturity Rating</legend>
+    <div class="mr">
+    <label><input type="radio" name="mRating" value="not_mature" required> Not Mature</label>
+    <label><input type="radio" name="mRating" value="mature" required> Mature</label>
+    </div>
+  </fieldset>
+  <button type="submit">Add to My List</button>
+   </div>
+</form>
+    </div>
+  </main>
+  <hr>
+  
+ <footer>
+  <p>&copy; 2025 My Book Collection. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/NewBook.js"></script>
+
+</body>
+</html>
